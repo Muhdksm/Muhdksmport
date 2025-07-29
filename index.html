@@ -50,14 +50,30 @@
     </div>
   </section>
 
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p> <a href="muhdkasim50@gmail.com"> ✉️ muhdkasim50@gmail.com</a></p>
-      <p>𝕏 @muhamma75379036</p>
-    </div>
-  </section>
+  <section id="contact" class="contact-form-wrapper">
+  <div class="contact-form">
+    <h2>Contact Me</h2>
+    <form action="https://formsubmit.co/muhdkasim50@gmail.com" method="POST">
+      <input type="hidden" name="_next" value="thankyou.html">
+      <input type="hidden" name="_captcha" value="false">
+
+      <label for="name">Name*</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email*</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message (Optional)</label>
+      <textarea id="message" name="message" rows="4" placeholder="Write something..."></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+  
 </main>
+
   <footer>
     <p> © 2025 Muhammad Kasim. All rights reserved.</p>
   </footer>
