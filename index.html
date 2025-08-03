@@ -7,15 +7,27 @@
   <title>Muhammad Kasim | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <header>
+     <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     <div class="container">
-      <h1>Muhammad Kasim</h1>
-      <nav>
+      <div class="logo">Muhammad Kasim</div>
+     
+      <nav class="navbar">
+        <div class="overlay" id="overlay"></div>
+        <ul class="nav-links" id="navLinks">
+        <button class="close-btn" id="closeBtn">X</button>
         <a href="#home">Home</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
+        <a href="pages/Responsive_Services.html">Services</a>
+        </ul>
       </nav>
     </div>
   </header>
@@ -26,7 +38,7 @@
         <h2>Hello, I'm <span>Muhammad</span></h2>
         <p>Frontend Developer.</p>
       </div>
-      <img src="pages/asset/D08A29FB-0E76-46DC-9707-A88F0E271AE1_1_105_c.jpeg" alt="Profile" />
+      <img src="pages/asset/42A92333-ADCC-44D6-A2A1-FF52B8539808.jpeg" alt="Profile" />
     </div>
   </section>
 
@@ -34,13 +46,13 @@
     <div class="container">
       <h2>Featured Projects</h2>
       <div class="project-list">
-        <a href="pages/website.html" target="_blank">
+        <a href="pages/website.html">
         <div class="card">
           <h3>Website</h3>
           <p class="featured-projects">Preview of my websites.</p>
         </div>
          </a>
-        <a href="pages/img.html" target="_blank">
+        <a href="pages/img.html">
         <div class="card">
           <h3>📸 Photo Gallery</h3>
           <p class="featured-projects">Images of my past websites.</p>
@@ -54,7 +66,7 @@
   <div class="contact-form">
     <h2>Contact Me</h2>
     <form action="https://formsubmit.co/muhdkasim50@gmail.com" method="POST">
-      <input type="hidden" name="_next" value="thankyou.html">
+      <input type="hidden" name="_next" value="">
       <input type="hidden" name="_captcha" value="false">
 
       <label for="name">Name*</label>
@@ -71,11 +83,24 @@
   </div>
 </section>
 
-  
+ <section class="socials">
+    <div class="container">
+      <h3>Connect with me</h3>
+      <div class="social-icons">
+        <a href="https://twitter.com/muhamma75379036" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://linkedin.com/in/muhammad-k-38ba9b354" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/Muhdkasim" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="mailto:muhdkasim50@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </section>
+
+
 </main>
 
   <footer>
     <p> © 2025 Muhammad Kasim. All rights reserved.</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
