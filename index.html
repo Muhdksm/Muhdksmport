@@ -113,5 +113,34 @@
     <p> © 2025 Muhammad Kasim. All rights reserved.</p>
   </footer>
   <script src="script.js" defer></script>
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js";
+  import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-firestore.js";
+
+  // 🔥 Your Firebase code goes here
+  const firebaseConfig = {
+    apiKey: "AIzaSyAFOszXD1PKb6UmgRVnpCtuK0B02MVc-fY",
+    authDomain: "muhdksm-d20d4.firebaseapp.com",
+    projectId: "muhdksm-d20d4",
+    storageBucket: "muhdksm-d20d4.firebasestorage.app",
+    messagingSenderId: "590236808797",
+    appId: "1:590236808797:web:00333a3bdf02e8fe5dffb4",
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+
+  // Example function to save visitor data
+  async function saveVisitor() {
+    await addDoc(collection(db, "visitors"), {
+      name: "Test Visitor",
+      time: new Date()
+    });
+    alert("Visitor saved to Firebase!");
+  }
+</script>
+
+<button onclick="saveVisitor()">Save Visitor</button>
 </body>
 </html>
