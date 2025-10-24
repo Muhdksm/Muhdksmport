@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loading Spinner</title>
+<style>
+  /* Center spinner on the page */
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #f4f4f4;
+    font-family: Arial, sans-serif;
+  }
+  .please-wait {
+    margin-bottom: 20px;
+    font-size: 1.3em;
+    font-weight: bold;
+    opacity: 0.9;
+  }
+
+  /* Spinner styling */
+  .spinner {
+    border: 6px solid #eee;        /* Light gray background */
+    border-top: 6px solid #4CAF50; /* Green top part */
+    border-radius: 50%;             /* Circle shape */
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+  }
+
+  /* Spin animation */
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+</style>
+</head>
+<body>
+
+<div class="please-wait">please wait...</div>
+<div class="spinner"></div>
+
+<script>
+  // Wait 3 seconds (3000ms), then redirect
+  setTimeout(() => {
+    window.location.href = "/pages/Responsive_Services.html"; // replace with your local HTML page
+  }, 1500);
+  
+</script>
+
+</body>
+</html>
