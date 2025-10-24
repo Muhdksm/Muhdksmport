@@ -35,13 +35,20 @@ html, body {
   display: flex;
   flex-direction: column;
   
+  
 }
 
 header {
-  background: #ee0606;
+  background: linear-gradient(270deg, #74ABE2, #5563DE, #74ABE2);
   color: white;
   padding: 1rem 0;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  animation: gradientMove 15s ease infinite;
+}
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 header .container {
@@ -89,7 +96,7 @@ nav a:hover {
 }
 
 .hero h2 span {
-  color: #ee0808;
+  color: #5563DE;
 }
 
 .hero p {
@@ -118,7 +125,7 @@ nav a:hover {
 .projects h2 {
   text-align: center;
   margin-bottom: 2rem;
-  color: #ee0606;
+  color: #5563DE;
 }
 
 .project-list {
@@ -128,11 +135,12 @@ nav a:hover {
 }
 
 .card {
-  background: #f4f6fa;
+  background:linear-gradient(270deg, hsl(210, 65%, 67%), #5563DE, #74ABE2);
   padding: 1.5rem;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
   transition: 0.3s;
+  color: white;
 }
 
 .card:hover {
@@ -175,17 +183,7 @@ footer {
   transition: all 0.3s ease;
   border-radius: 1px;
 }
-.hamburger.open span:nth-child(1) {
-  transform: rotate(45deg)
-  translate(4px, 4px);
-}
-.hamburger.open span:nth-child(2) {
-  opacity: 0;
-}
-.hamburger.open span:nth-child(3) {
-  transform: rotate(-45deg)
-  translate(4px, -4px);
-}
+
 .close-btn {
   display: none;
 }
@@ -237,7 +235,8 @@ footer {
     border-bottom-left-radius: 12px;
     border-top-left-radius: 12px;
     left: -100%;
-    background: rgba(30,30,30,0.7);
+     background: linear-gradient(270deg, #74ABE2, #5563DE, #74ABE2);
+    animation: gradientMove 15s ease infinite;
     backdrop-filter: blur(12px);
     box-shadow: 2px 2px 15px rgba(0,0,0,0.4);
     border-right: 1px solid rgba(255, 255, 255, 0.1);
@@ -250,6 +249,11 @@ footer {
     justify-content: center;
     align-items: center;
   }
+  @keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
   .close-btn {
     position: absolute;
     top: 20px;
@@ -351,14 +355,15 @@ footer {
 }
 
 .contact-form-wrapper {
-  background: #f9f9f9;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
   padding: 3rem 1rem;
   display: flex;
   justify-content: center;
 }
 
 .contact-form {
-  background: #fff;
+  background: linear-gradient(270deg, hsl(210, 65%, 67%), #5563DE, #74ABE2);
   padding: 2rem;
   max-width: 600px;
   width: 100%;
