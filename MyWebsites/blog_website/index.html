@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Blog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>My Blog</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+    <input type="text" id="searchBar" placeholder="Search blog posts...">
+    <button id="darkModeBtn">🌙 Dark Mode</button>
+  </header>
+
+  <main>
+    <!-- Blog Post 1 -->
+    <article>
+      <img src="images/post1.jpg" alt="First Blog Image" class="post-img">
+      <h2>First Blog Post</h2>
+      <p class="post-preview">This is the content of my very first blog post. It introduces the blog...</p>
+      <p class="post-full hidden">Here is the rest of the first blog post. It goes into detail and gives more information about the topic.</p>
+      <button class="read-more-btn">Read More</button>
+
+      <div class="reaction-buttons">
+        <button class="like-btn">👍 <span class="like-count">0</span></button>
+        <button class="dislike-btn">👎 <span class="dislike-count">0</span></button>
+      </div>
+
+      <div class="comment-section">
+        <input type="text" placeholder="Write a comment..." class="comment-input">
+        <button class="comment-btn">Post</button>
+        <ul class="comment-list"></ul>
+      </div>
+    </article>
+
+    <!-- Blog Post 2 -->
+    <article>
+      <img src="images/post2.jpg" alt="Second Blog Image" class="post-img">
+      <h2>Second Blog Post</h2>
+      <p class="post-preview">Here is another blog post with more content. It starts with an intro...</p>
+      <p class="post-full hidden">This is the extended content of the second post, giving more depth and details about the topic.</p>
+      <button class="read-more-btn">Read More</button>
+
+      <div class="reaction-buttons">
+        <button class="like-btn">👍 <span class="like-count">0</span></button>
+        <button class="dislike-btn">👎 <span class="dislike-count">0</span></button>
+      </div>
+
+      <div class="comment-section">
+        <input type="text" placeholder="Write a comment..." class="comment-input">
+        <button class="comment-btn">Post</button>
+        <ul class="comment-list"></ul>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="social-links">
+        <a href="#" target="_blank">🌐 Facebook</a>
+        <a href="#" target="_blank">🐦 Twitter</a>
+        <a href="#" target="_blank">📸 Instagram</a>
+        <a href="#" target="_blank">💼 LinkedIn</a>
+      </div>
+
+      <div class="newsletter">
+        <h3>Subscribe to our Newsletter</h3>
+        <form id="newsletterForm">
+          <input type="email" id="newsletterEmail" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+        <p id="newsletterMessage"></p>
+      </div>
+    </div>
+    <p class="footer-bottom">&copy; 2025 My Blog | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
